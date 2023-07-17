@@ -1,14 +1,8 @@
 <?php
-    include_once __DIR__ . '/classes/kennels.php';
-    include_once __DIR__ . '/classes/croquettes.php';
-    include_once __DIR__ . '/classes/toys.php';
-    class Categories {
-        public $name;
-        
-        function __construct($name){
-            $this->name =$name;
-        }
-    }
+include_once __DIR__ . '/classes/Categories.php';
+include_once __DIR__ . '/classes/Product.php';
+// include_once __DIR__ . '/classes/Food.php';
+// include_once __DIR__ . '/classes/Toys.php';
 ?>
 
 <!DOCTYPE html>
