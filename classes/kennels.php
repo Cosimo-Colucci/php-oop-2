@@ -1,5 +1,5 @@
 <?php
-    class kennels extends Categories {
+    class Kennels extends Categories {
         
     }
 ?>

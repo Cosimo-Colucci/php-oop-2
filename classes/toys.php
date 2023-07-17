@@ -1,5 +1,5 @@
 <?php
-    class toys extends Categories {
+    class Toys extends Categories {
         
     }
 ?>
