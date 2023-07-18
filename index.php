@@ -24,20 +24,20 @@ include_once __DIR__ . '/db/init.php';
             </div>
         </div>
         <div class="row justify-content-around">
-        <?php foreach ($products as $product) { ?>
-            <div class="col-3 m-4 p-0">
-                <img class="card-img-top" src="<?php echo $product->image; ?>" alt="<?php echo $product->name; ?>">
-                <div class="card-body">
-                    <h5 class="card-title"><?php echo $product->name ?></h5>
-                    <h6 class="card-submint"><?php echo $product->categories->name; ?></h6>
-                    <p class="card-text"><?php $product->description; ?></p>
-                    <a href="#" class="btn btn-primary"><?php $product->price; ?>€</a>
-                </div>                  
-            </div>
-        <?php } ?>
+            <?php foreach ($products as $product) { ?>
+                <div class="col-3 m-4 p-0">
+                    <img class="card-img-top" src="<?php echo $product->image; ?>" alt="<?php echo $product->name; ?>">
+                    <div class="card-body">
+                        <h5 class="card-title"><?php echo $product->name ?></h5>
+                        <h6 class="card-submint"><?php echo $product->category->name; ?></h6>
+                        <p class="card-text"><?php echo $product->description; ?></p>
+                        <a href="#" class="btn btn-primary">Only for<?php echo $product->price ?>€</a>
+                    </div>                  
+                </div>
+            <?php } ?>
         </div>
                 <?php
-                echo var_dump ($foodProduct, $kennelProduct, $toysProduct);
+                // echo var_dump ($foodProduct, $kennelProduct, $toysProduct);
                 ?>
     </div>
 </body>
