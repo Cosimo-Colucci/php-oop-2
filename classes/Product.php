@@ -9,10 +9,10 @@
         public $category;
         public $quantity;
         
-        function __construct(String $name, String $description, Float $price, String $image, Categories $category, INt $quantity){
+        function __construct(String $name, String $description, Float $price, String $image, Categories $category, Int $quantity){
             $this->name =$name;
             $this->description =$description;
-            $this->price =$napriceme;
+            $this->price =$price;
             $this->image =$image;
             $this->category =$category;
             $this->quantity =$quantity;

@@ -3,6 +3,7 @@ include_once __DIR__ . '/classes/Categories.php';
 include_once __DIR__ . '/classes/Product.php';
 // include_once __DIR__ . '/classes/Food.php';
 // include_once __DIR__ . '/classes/Toys.php';
+include_once __DIR__ . '/db/init.php';
 ?>
 
 <!DOCTYPE html>
@@ -20,6 +21,9 @@ include_once __DIR__ . '/classes/Product.php';
                 <h1>
                     Shop
                 </h1>
+                <?php echo var_dump ($foodProduct, $kennelProduct, $toysProduct); ?>
+                   
+                <?php ?>
             </div>
         </div>
     </div>
